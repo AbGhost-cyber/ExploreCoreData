@@ -14,7 +14,7 @@ class DataController: ObservableObject {
     static let shared: DataController = DataController()
     
    private init() {
-        container = NSPersistentContainer(name: "model")
+        container = NSPersistentContainer(name: "Singer")
        container.loadPersistentStores { _, error in
            if let error = error {
                print("Core Data failed to load: \(error.localizedDescription)")
