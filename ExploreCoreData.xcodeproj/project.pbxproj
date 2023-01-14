@@ -14,6 +14,7 @@
 		043A1844296EF7A40012449B /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043A1843296EF7A40012449B /* DataController.swift */; };
 		04635FFB2971470800D9DA95 /* Singer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04635FF92971470800D9DA95 /* Singer.xcdatamodeld */; };
 		046360012971605100D9DA95 /* FilteredList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046360002971605100D9DA95 /* FilteredList.swift */; };
+		046360032972596500D9DA95 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046360022972596500D9DA95 /* TestView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		043A1843296EF7A40012449B /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		04635FFA2971470800D9DA95 /* Singer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Singer.xcdatamodel; sourceTree = "<group>"; };
 		046360002971605100D9DA95 /* FilteredList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteredList.swift; sourceTree = "<group>"; };
+		046360022972596500D9DA95 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				043A1838296EF71B0012449B /* Preview Content */,
 				043A1843296EF7A40012449B /* DataController.swift */,
 				04635FF92971470800D9DA95 /* Singer.xcdatamodeld */,
+				046360022972596500D9DA95 /* TestView.swift */,
 			);
 			path = ExploreCoreData;
 			sourceTree = "<group>";
@@ -146,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				046360032972596500D9DA95 /* TestView.swift in Sources */,
 				043A1835296EF7190012449B /* ContentView.swift in Sources */,
 				046360012971605100D9DA95 /* FilteredList.swift in Sources */,
 				043A1844296EF7A40012449B /* DataController.swift in Sources */,
