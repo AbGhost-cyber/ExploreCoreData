@@ -12,9 +12,13 @@
 		043A1837296EF71B0012449B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 043A1836296EF71B0012449B /* Assets.xcassets */; };
 		043A183A296EF71B0012449B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 043A1839296EF71B0012449B /* Preview Assets.xcassets */; };
 		043A1844296EF7A40012449B /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043A1843296EF7A40012449B /* DataController.swift */; };
-		04635FFB2971470800D9DA95 /* Singer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04635FF92971470800D9DA95 /* Singer.xcdatamodeld */; };
 		046360012971605100D9DA95 /* FilteredList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046360002971605100D9DA95 /* FilteredList.swift */; };
 		046360032972596500D9DA95 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046360022972596500D9DA95 /* TestView.swift */; };
+		046360302972984700D9DA95 /* datamodels.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0463602E2972984700D9DA95 /* datamodels.xcdatamodeld */; };
+		0463603D29729ADA00D9DA95 /* City+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0463603929729AD900D9DA95 /* City+CoreDataClass.swift */; };
+		0463603E29729ADA00D9DA95 /* City+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0463603A29729ADA00D9DA95 /* City+CoreDataProperties.swift */; };
+		0463603F29729ADA00D9DA95 /* Province+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0463603B29729ADA00D9DA95 /* Province+CoreDataClass.swift */; };
+		0463604029729ADA00D9DA95 /* Province+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0463603C29729ADA00D9DA95 /* Province+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,9 +28,14 @@
 		043A1836296EF71B0012449B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		043A1839296EF71B0012449B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		043A1843296EF7A40012449B /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
-		04635FFA2971470800D9DA95 /* Singer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Singer.xcdatamodel; sourceTree = "<group>"; };
 		046360002971605100D9DA95 /* FilteredList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteredList.swift; sourceTree = "<group>"; };
 		046360022972596500D9DA95 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		0463602F2972984700D9DA95 /* datamodels.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = datamodels.xcdatamodel; sourceTree = "<group>"; };
+		0463603929729AD900D9DA95 /* City+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "City+CoreDataClass.swift"; path = "ExploreCoreData/City+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0463603A29729ADA00D9DA95 /* City+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "City+CoreDataProperties.swift"; path = "ExploreCoreData/City+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0463603B29729ADA00D9DA95 /* Province+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Province+CoreDataClass.swift"; path = "ExploreCoreData/Province+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0463603C29729ADA00D9DA95 /* Province+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Province+CoreDataProperties.swift"; path = "ExploreCoreData/Province+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		046360412972A09400D9DA95 /* datamodels 3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "datamodels 3.xcdatamodel"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +52,10 @@
 		043A1826296EF7190012449B = {
 			isa = PBXGroup;
 			children = (
+				0463603929729AD900D9DA95 /* City+CoreDataClass.swift */,
+				0463603A29729ADA00D9DA95 /* City+CoreDataProperties.swift */,
+				0463603B29729ADA00D9DA95 /* Province+CoreDataClass.swift */,
+				0463603C29729ADA00D9DA95 /* Province+CoreDataProperties.swift */,
 				043A1831296EF7190012449B /* ExploreCoreData */,
 				043A1830296EF7190012449B /* Products */,
 			);
@@ -65,8 +78,8 @@
 				043A1836296EF71B0012449B /* Assets.xcassets */,
 				043A1838296EF71B0012449B /* Preview Content */,
 				043A1843296EF7A40012449B /* DataController.swift */,
-				04635FF92971470800D9DA95 /* Singer.xcdatamodeld */,
 				046360022972596500D9DA95 /* TestView.swift */,
+				0463602E2972984700D9DA95 /* datamodels.xcdatamodeld */,
 			);
 			path = ExploreCoreData;
 			sourceTree = "<group>";
@@ -151,10 +164,14 @@
 			files = (
 				046360032972596500D9DA95 /* TestView.swift in Sources */,
 				043A1835296EF7190012449B /* ContentView.swift in Sources */,
+				0463603F29729ADA00D9DA95 /* Province+CoreDataClass.swift in Sources */,
 				046360012971605100D9DA95 /* FilteredList.swift in Sources */,
 				043A1844296EF7A40012449B /* DataController.swift in Sources */,
-				04635FFB2971470800D9DA95 /* Singer.xcdatamodeld in Sources */,
+				0463603E29729ADA00D9DA95 /* City+CoreDataProperties.swift in Sources */,
 				043A1833296EF7190012449B /* ExploreCoreDataApp.swift in Sources */,
+				0463603D29729ADA00D9DA95 /* City+CoreDataClass.swift in Sources */,
+				046360302972984700D9DA95 /* datamodels.xcdatamodeld in Sources */,
+				0463604029729ADA00D9DA95 /* Province+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,13 +374,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		04635FF92971470800D9DA95 /* Singer.xcdatamodeld */ = {
+		0463602E2972984700D9DA95 /* datamodels.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				04635FFA2971470800D9DA95 /* Singer.xcdatamodel */,
+				046360412972A09400D9DA95 /* datamodels 3.xcdatamodel */,
+				0463602F2972984700D9DA95 /* datamodels.xcdatamodel */,
 			);
-			currentVersion = 04635FFA2971470800D9DA95 /* Singer.xcdatamodel */;
-			path = Singer.xcdatamodeld;
+			currentVersion = 0463602F2972984700D9DA95 /* datamodels.xcdatamodel */;
+			path = datamodels.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

@@ -11,36 +11,44 @@ import CoreData
 
 struct ContentView: View {
     @Environment(\.managedObjectContext) var moc
-    @State private var lastNameFilter = "A"
+  //  @State private var lastNameFilter = "A"
+    @FetchRequest(sortDescriptors: []) var provinces: FetchedResults<Province>
     
     var body: some View {
         NavigationStack {
             VStack {
-                FilteredList(filterKey: "lastName", filterValue: lastNameFilter) { (singer: Singer) in
-                    Text("\(singer.firstName ?? "") \(singer.lastName ?? "")")
+                List {
+                    ForEach(provinces) { province in
+                        Section {
+                            ForEach(province.cities) { city in
+                                Text(city.wrappedName)
+                            }
+                        } header: {
+                            Text(province.wrappedName)
+                        }
+                    }
                 }
                 Button("Add Examples") {
-                    let taylor = Singer(context: moc)
-                    taylor.firstName = "Taylor"
-                    taylor.lastName = "Swift"
+                    let nanchang = City(context: moc)
+                    nanchang.name = "Nanchang"
+                    nanchang.province = Province(context: moc)
+                    nanchang.province?.name = "Jiangxi"
+                    nanchang.province?.id = "1"
                     
-                    let ed = Singer(context: moc)
-                    ed.firstName = "Ed"
-                    ed.lastName = "Sheeran"
+                    let jiujiang = City(context: moc)
+                    jiujiang.name = "JiuJiang"
+                    jiujiang.province = Province(context: moc)
+                    jiujiang.province?.name = "Jiangxi"
+                    jiujiang.province?.id = "1"
                     
-                    let adele = Singer(context: moc)
-                    adele.firstName = "Adele"
-                    adele.lastName = "Adkins"
+                    let wuhan = City(context: moc)
+                    wuhan.name = "Wuhan"
+                    wuhan.province = Province(context: moc)
+                    wuhan.province?.name = "Hubei"
+                    wuhan.province?.id = "2"
                     
                     try? moc.save()
-                }
-                
-                Button("Show A") {
-                    lastNameFilter = "A"
-                }
-                
-                Button("Show S") {
-                    lastNameFilter = "S"
+                    
                 }
             }
             .navigationTitle("Core Data")
